@@ -12,3 +12,4 @@ _deps
 
 *.json
 *./build
+*.cmake

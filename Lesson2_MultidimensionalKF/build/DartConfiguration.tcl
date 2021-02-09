@@ -4,40 +4,30 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/kimsooyoung/Documents/Udacity/RoboticsSW/Lesson2_MultidimensionalKF
-BuildDirectory: /home/kimsooyoung/Documents/Udacity/RoboticsSW/Lesson2_MultidimensionalKF/build
+SourceDirectory: /Users/swimm_kim/Documents/Study/Udacity/RoboND/RoboND_Kalman_Filter/Lesson2_MultidimensionalKF
+BuildDirectory: /Users/swimm_kim/Documents/Study/Udacity/RoboND/RoboND_Kalman_Filter/Lesson2_MultidimensionalKF/build
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: kimsooyoung-XPS-13-9370
+Site: Swimming-Kimui-MacBookPro.local
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Linux-g++-7
+BuildName: Darwin-clang++
 
 # Subprojects
 LabelsForSubprojects: 
 
 # Submission information
-IsCDash: 
-CDashVersion: 
-QueryCDashVersion: 
-DropSite: 
-DropLocation: 
-DropSiteUser: 
-DropSitePassword: 
-DropSiteMode: 
-DropMethod: http
-TriggerSite: 
-ScpCommand: /usr/bin/scp
+SubmitURL: http://
 
 # Dashboard start time
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/bin/cmake" "/home/kimsooyoung/Documents/Udacity/RoboticsSW/Lesson2_MultidimensionalKF"
-MakeCommand: /usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+ConfigureCommand: "/usr/local/Cellar/cmake/3.16.5/bin/cmake" "/Users/swimm_kim/Documents/Study/Udacity/RoboND/RoboND_Kalman_Filter/Lesson2_MultidimensionalKF"
+MakeCommand: /usr/local/Cellar/cmake/3.16.5/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -49,7 +39,7 @@ CVSCommand: CVSCOMMAND-NOTFOUND
 CVSUpdateOptions: -d -A -P
 
 # Subversion options
-SVNCommand: /usr/bin/svn
+SVNCommand: SVNCOMMAND-NOTFOUND
 SVNOptions: 
 SVNUpdateOptions: 
 
@@ -72,8 +62,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: /usr/bin/g++-7
-CompilerVersion: 7.5.0
+Compiler: /usr/bin/clang++
+CompilerVersion: 12.0.0.12000032
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 
